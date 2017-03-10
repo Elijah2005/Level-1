@@ -21,20 +21,18 @@ game.drawButtons(new Random().nextInt(game.NumberOfButtons));
 	
 	frame.add(panel);
 for (int i = 0; i < NumberOfButtons; i++) {
-	JButton button = new JButton("Mole");
-	panel.add(button);
-	System.out.println(i);
+	panel.add(new JButton());
 }
 	 
 frame.setVisible(true);	 
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+int moleButton;
 
 }
 @Override
 public void mouseClicked(MouseEvent e) {
 	// TODO Auto-generated method stub
-	if()
+	
 }
 @Override
 public void mousePressed(MouseEvent e) {
