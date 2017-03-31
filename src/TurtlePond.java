@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -58,14 +59,26 @@ showCookie();
 		int tortoiseLocationY = Tortoise.getY();
 
 		// 7. If the Tortoise is within 100 pixels of the food, set the background color to yellow
-
-		// 8. If the Tortoise is within 50 pixels of the food, set the background color to orange
-
-		// 9. If the Tortoise is within 20 pixels of the food, set the background color to red
-
-		// 10. If the Tortoise is within 5 pixels of the cookie, make a pop-up to tell them they found it
-				
+int xDistance = Math.abs(tortoiseLocationX-cookieX);
+int yDistance = Math.abs(tortoiseLocationY-cookieY);
+if(xDistance<=5||yDistance<=5){
+	JOptionPane.showMessageDialog(null, "You found the cookie");
+}
+else if(xDistance<=20||yDistance<=20){
+	setBackgroundColor(Color.RED);
+}
+else if(xDistance<=50||yDistance<=50){
+	setBackgroundColor(Color.ORANGE);
+}
+else if(xDistance<=100||yDistance<=100){
+	setBackgroundColor(Color.YELLOW);
+}
 		// 11. If more than 20 seconds have elapsed, tell them the turtle died of hunger!
+if(getTimeElapsed()>20){
+	JOptionPane.showMessageDialog(null, "The turtle died of hunger");
+}
+
+
 
 		// 12. If the Tortoise crosses it's own path, tell them they failed and move them back to the beginning
 
