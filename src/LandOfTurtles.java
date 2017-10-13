@@ -19,7 +19,7 @@ frame.setVisible(true);
     for (int i = 0; i < 100; i++) {
     Turtle tortle = new Turtle();
     panel.addTurtle(tortle);
-    tortle.penUp();
+    tortle.penDown();
     tortle.moveTo(random.nextInt(1300), random.nextInt(800));
     }
 }

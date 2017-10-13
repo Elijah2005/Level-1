@@ -50,7 +50,7 @@ quizWindow.pack();
 		// 13. ask another question
 JOptionPane.showInputDialog("What is this meme");
 		// 14+ check answer, say if correct or incorrect, etc.
-JOptionPane.showInputDialog("CORRECT");
+JOptionPane.showMessageDialog(null, "CORRECT");
 //JOptionPane.showInputDialog("INCORRECT");
 
 	}

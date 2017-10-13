@@ -11,11 +11,14 @@
 /PhotoOuiz.class
 /Picasso.class
 /RandomRobots.class
+/Rocket.class
+/RocketController.class
 /SlotMachine.class
 /Song$1.class
 /Song.class
 /TurtlePond$1.class
 /TurtlePond.class
+/TypingTutor.class
 /WhackAMole.class
 /gridWorld.class
 /image.jpg
@@ -24,6 +27,4 @@
 /song1.mp3
 /song2.mp3
 /song3.mp3
-/RocketController.class
-/Rocket.class
-/TypingTutor.class
+/MagicWorms.class
